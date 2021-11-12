@@ -24,4 +24,4 @@ def Ping():
         return "Link is unavailable"
         
 def test_link_check():    
-    assert ping() != 'Link is unavailable'
+    assert Ping() != 'Link is unavailable'

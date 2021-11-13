@@ -12,16 +12,14 @@ async def root():
 
 @app.get("/NSFW")
 async def NSFW():
-
+	
 	any_joke = "https://v2.jokeapi.dev/joke/Any"
 	response_any = requests.get(any_joke)
-
+	
 	if "joke" in response_any.json():
 		return response_any.json()["joke"]
 	else:
-		return "{} {}".format(
-			response_any.json()["setup"], response_any.json()["delivery"]
-		)
+		return "{} {}".format(response_any.json()["setup"], response_any.json()["delivery"])
 
 
 @app.get("/SFW")
@@ -33,9 +31,7 @@ async def SFW():
 	if "joke" in response_sfw.json():
 		return response_sfw.json()["joke"]
 	else:
-		return "{} {}".format(
-			response_sfw.json()["setup"], response_sfw.json()["delivery"]
-		)
+		return "{} {}".format(response_sfw.json()["setup"], response_sfw.json()["delivery"])
 
 
 if __name__ == "__main__":

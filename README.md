@@ -22,9 +22,9 @@
      1. In the command line type &quot;python3 -m venv ~/.venv&quot; ; Enter ; type &quot;source ~/.venv/bin/activate&quot; ; Enter
 6. Initial project scaffolding
      1. In the command line type &quot;touch&quot; and the below files with a space in between each one:
-          1. txt
+          1. requirements.txt
           2. Makefile
-          3. py
+          3. main.py
           4. test\_main.py
      2. Enter
 7. Makefile
@@ -129,9 +129,9 @@ if __name__ == "__main__":
 ```
 14. Commit changes to GitHub
      1. Go to the command line ; ensure you are still in the repo by typing &quot;pwd&quot; ; once confirmed, type &quot;git add&quot; and the below files with a space in between each one
-          1. txt
+          1. requirements.txt
           2. Makefile
-          3. py
+          3. main.py
           4. test\_main.py
      2. Type &quot;git commit -m \"Add your message here\"&quot; ; type &quot;git push&quot;
 15. Swagger UI
